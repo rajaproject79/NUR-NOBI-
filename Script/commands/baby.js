@@ -6,7 +6,7 @@ const baseApiUrl = async () => {
 };
 
 module.exports.config = {
- name: "baby",
+ name: "mim",
  version: "6.9.9",
  credits: "dipto",
  cooldowns: 0,
@@ -159,7 +159,7 @@ try{
  if(body.startsWith("baby") || body.startsWith("bby") || body.startsWith("/bot")){
  const arr = body.replace(/^\S+\s*/, "")
  if(!arr) {
- await api.sendMessage("hum xan bolo ami asi ", event.threadID, (error, info) => {
+ await api.sendMessage("আমার নাম মিম আমাকে ব্যবহার করতে চাইলে মিম লেখে কিছু জিজ্ঞাসা করুন যেমন: মিম কি করো", event.threadID, (error, info) => {
  global.client.handleReply.push({
  name: this.config.name,
  type: "reply",
